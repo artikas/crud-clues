@@ -1,0 +1,25 @@
+{
+  "name": "crud-clues",
+  "version": "0.0.1",
+  "description": "generic crud implementation using mongoose and clues.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artikas/crud-clues.git"
+  },
+  "keywords": [
+    "crud"
+  ],
+  "author": "dgiraldez@phoenixabs.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artikas/crud-clues/issues"
+  },
+  "homepage": "https://github.com/artikas/crud-clues#readme",
+  "dependencies": {
+    "clues": "^3.3.2"
+  }
+}
