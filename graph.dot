@@ -1,0 +1,26 @@
+digraph {
+	input_data [color=green];
+	id [style=dotted];
+	valid_input [style=dotted];
+	query [style=dotted];
+	valid_data [style=dotted];
+	user_access [style=dotted];
+	input_data -> valid_input[style=dotted];
+	id -> mongo_id[style=dotted];
+	mongo_id -> query[style=dotted];
+	valid_input -> id;
+	valid_input -> save;
+	user_access -> save;
+	query -> save;
+	user_access -> read;
+	query -> read;
+	read -> update;
+	save -> create;
+	read -> create;
+	save -> update;
+	query -> delete;
+	user_access -> delete;
+	save -> data;
+	read -> data;
+	data -> valid_data;
+}
