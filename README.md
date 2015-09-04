@@ -7,8 +7,8 @@ Example:
 crud({
   $model : exampleModel,
   user_access : {},
-  input_data : ['input.exampleInput',function(d) { return d;}],
-  id : ['input.id',function(d) { return d;}]
+  input_data : ['input.exampleInput', Object],
+  id : ['input.id', Object]
 })
 ``` 
 
@@ -38,7 +38,7 @@ Should return an object that constrains any queries to objects that should be ac
 Custom function required to provide the set of inputs for any update/create.
 Example:
 ```
-input_data : ['input.data_entry',function(d) { return d;}]
+input_data : ['input.data_entry', Object]
 ``` 
 
 #### `valid_input` (optional)
