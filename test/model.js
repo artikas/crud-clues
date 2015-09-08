@@ -6,6 +6,8 @@ var genericObject = {
 	name : String,
 	number : Number,
 	requiredField : { type : String, required : true },
+	custom_id : String,
+	data: String
 };
 
 var schema = new crud.mongoose.Schema(genericObject),

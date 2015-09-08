@@ -61,15 +61,14 @@ describe('Multiple tenants (a and b)',function() {
       return clues(api('a'),'update',{input:{data:record}});
     });
 
-    // todo: check why this test doesn't pass
-    // it('reads',function() {
-    //   return clues(api('a'),'read',{input:{id:record._id.toString()}})
-    //     .then(function(d) {
-    //       console.log(d);
-    //       assert.deepEqual(d._id,record._id);
-    //       assert.equal(d.custom_id,'UPDATED_ID');
-    //     });
-    // });
+    //todo: check why this test doesn't pass
+    it('reads',function() {
+      return clues(api('a'),'read',{input:{id:record._id.toString()}})
+        .then(function(d) {
+          assert.deepEqual(d._id,record._id);
+          assert.equal(d.custom_id,'UPDATED_ID');
+        });
+    });
 
     it('deletes',function() {
       return clues(api('a'),'delete',{input:{id:record._id.toString()}});
